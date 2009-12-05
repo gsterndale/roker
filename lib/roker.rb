@@ -142,7 +142,9 @@ protected
   
   def weather_xml_soap
     soap_driver = SOAP::WSDLDriverFactory.new(WSDL_URL).create_rpc_driver
-    soap_driver.NDFDgen(self.lat, self.lng, WSDL_PRODUCT, self.started_at.strftime("%Y-%m-%dT%H:%M:%S-05:00"), self.ended_at.strftime("%Y-%m-%dT%H:%M:%S-05:00"), WSDL_PARAMETERS)
+    request_started_at  = (self.started_at-1).strftime("%Y-%m-%dT%H:%M:%S-05:00")
+    request_ended_at    = self.ended_at.strftime("%Y-%m-%dT%H:%M:%S-05:00")
+    soap_driver.NDFDgen(self.lat, self.lng, WSDL_PRODUCT, request_started_at, request_ended_at, WSDL_PARAMETERS)
   end
   
   def weather_xml_uri
@@ -158,7 +160,7 @@ protected
     sprintf("http://www.weather.gov/forecasts/xml/sample_products/" + 
             "browser_interface/ndfdBrowserClientByDay.php?" + 
             "&format=24+hourly&numDays=%s&lat=%s&lon=%s&startDate=%s", 
-            num_days, self.lat, self.lng, self.started_at.to_s(:weather))
+            num_days, self.lat, self.lng, self.started_at.strftime("%Y-%m-%d"))
   end
   
   def self.parse_time(str='')
