@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Greg"]
+  s.authors = ["Greg Sterndale"]
   s.date = %q{2009-12-05}
-  s.description = %q{TODO: longer description of your gem}
-  s.email = %q{greg@plectix.com}
+  s.description = %q{Weather forecasts from weather.gov}
+  s.email = %q{gsterndale@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
      "lib/time_span.rb",
      "lib/weather_parameter.rb",
      "roker",
+     "roker.gemspec",
      "test/helper.rb",
      "test/test_roker.rb",
      "test/test_time.rb",
@@ -42,7 +43,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Weather forecasts from weather.gov}
   s.test_files = [
     "test/helper.rb",
      "test/test_roker.rb",
