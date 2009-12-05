@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product srsName="WGS 1984" concise-name="time-series" operational-mode="official">
+      <title>NOAA's National Weather Service Forecast Data</title>
+      <field>meteorological</field>
+      <category>forecast</category>
+      <creation-date refresh-frequency="PT1H">2008-11-23T08:17:11Z</creation-date>
+    </product>
+    <source>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+      <production-center>Meteorological Development Laboratory<sub-center>Product Generation Branch</sub-center></production-center>
+      <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+      <credit>http://www.weather.gov/</credit>
+      <credit-logo>http://www.weather.gov/images/xml_logo.gif</credit-logo>
+      <feedback>http://www.weather.gov/feedback.php</feedback>
+    </source>
+  </head>
+  <data>
+    <location>
+      <location-key>point1</location-key>
+      <point latitude="42.00" longitude="-81.00"/>
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?textField1=42.00&amp;textField2=-81.00</moreWeatherInformation>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n1-1</layout-key>
+      <start-valid-time>2008-11-24T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-24T19:00:00-05:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n2-2</layout-key>
+      <start-valid-time>2008-11-23T19:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-24T08:00:00-05:00</end-valid-time>
+      <start-valid-time>2008-11-24T19:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-25T08:00:00-05:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p12h-n3-3</layout-key>
+      <start-valid-time>2008-11-23T19:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-24T07:00:00-05:00</end-valid-time>
+      <start-valid-time>2008-11-24T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-24T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2008-11-24T19:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-25T07:00:00-05:00</end-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p3h-n9-4</layout-key>
+      <start-valid-time>2008-11-24T04:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-24T07:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-24T10:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-24T13:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-24T16:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-24T19:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-24T22:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-25T01:00:00-05:00</start-valid-time>
+      <start-valid-time>2008-11-25T04:00:00-05:00</start-valid-time>
+    </time-layout>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p6h-n5-5</layout-key>
+      <start-valid-time>2008-11-24T01:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-24T07:00:00-05:00</end-valid-time>
+      <start-valid-time>2008-11-24T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-24T13:00:00-05:00</end-valid-time>
+      <start-valid-time>2008-11-24T13:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-24T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2008-11-24T19:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-25T01:00:00-05:00</end-valid-time>
+      <start-valid-time>2008-11-25T01:00:00-05:00</start-valid-time>
+      <end-valid-time>2008-11-25T07:00:00-05:00</end-valid-time>
+    </time-layout>
+    <parameters applicable-location="point1">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n1-1">
+        <name>Daily Maximum Temperature</name>
+        <value>42</value>
+      </temperature>
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n2-2">
+        <name>Daily Minimum Temperature</name>
+        <value>36</value>
+        <value>36</value>
+      </temperature>
+      <temperature type="hourly" units="Fahrenheit" time-layout="k-p3h-n9-4">
+        <name>Temperature</name>
+        <value>36</value>
+        <value>36</value>
+        <value>39</value>
+        <value>41</value>
+        <value>41</value>
+        <value>39</value>
+        <value>38</value>
+        <value>37</value>
+        <value>37</value>
+      </temperature>
+      <temperature type="dew point" units="Fahrenheit" time-layout="k-p3h-n9-4">
+        <name>Dew Point Temperature</name>
+        <value>26</value>
+        <value>27</value>
+        <value>30</value>
+        <value>31</value>
+        <value>32</value>
+        <value>32</value>
+        <value>32</value>
+        <value>31</value>
+        <value>30</value>
+      </temperature>
+      <precipitation type="liquid" units="inches" time-layout="k-p6h-n5-5">
+        <name>Liquid Precipitation Amount</name>
+        <value>0.00</value>
+        <value>0.09</value>
+        <value>0.09</value>
+        <value>0.06</value>
+        <value>0.06</value>
+      </precipitation>
+      <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n3-3">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value>14</value>
+        <value>80</value>
+        <value>68</value>
+      </probability-of-precipitation>
+      <wind-speed type="sustained" units="knots" time-layout="k-p3h-n9-4">
+        <name>Wind Speed</name>
+        <value>12</value>
+        <value>11</value>
+        <value>15</value>
+        <value>18</value>
+        <value>16</value>
+        <value>16</value>
+        <value>22</value>
+        <value>29</value>
+        <value>31</value>
+      </wind-speed>
+      <direction type="wind" units="degrees true" time-layout="k-p3h-n9-4">
+        <name>Wind Direction</name>
+        <value>190</value>
+        <value>190</value>
+        <value>180</value>
+        <value>160</value>
+        <value>200</value>
+        <value>230</value>
+        <value>250</value>
+        <value>270</value>
+        <value>270</value>
+      </direction>
+      <cloud-amount type="total" units="percent" time-layout="k-p3h-n9-4">
+        <name>Cloud Cover Amount</name>
+        <value>68</value>
+        <value>74</value>
+        <value>80</value>
+        <value>87</value>
+        <value>94</value>
+        <value>100</value>
+        <value>100</value>
+        <value>100</value>
+        <value>100</value>
+      </cloud-amount>
+      <humidity type="relative" units="percent" time-layout="k-p3h-n9-4">
+        <name>Relative Humidity</name>
+        <value>66</value>
+        <value>69</value>
+        <value>70</value>
+        <value>67</value>
+        <value>70</value>
+        <value>76</value>
+        <value>79</value>
+        <value>79</value>
+        <value>75</value>
+      </humidity>
+      <water-state time-layout="k-p12h-n3-3">
+        <waves type="significant" units="feet">
+          <name>Wave Height</name>
+          <value>2</value>
+          <value>5</value>
+          <value>11</value>
+        </waves>
+      </water-state>
+    </parameters>
+  </data>
+</dwml>
