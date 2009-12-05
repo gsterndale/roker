@@ -1,4 +1,5 @@
-require 'numeric'
+require File.dirname(__FILE__) + '/numeric'
+require File.dirname(__FILE__) + '/time_span'
 
 # assert interval is constant
 # assert start_at of one TimeSpan can equal end_at of another

@@ -1,3 +1,7 @@
+require File.dirname(__FILE__) + '/numeric'
+require File.dirname(__FILE__) + '/time_layout'
+require File.dirname(__FILE__) + '/time_span'
+
 class WeatherParameter
   attr_accessor :time_layout, :values, :calculation_method
   

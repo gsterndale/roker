@@ -1,15 +1,18 @@
+require 'rubygems'
+require 'hpricot'
+require 'soap/wsdlDriver'
+require 'xsd/mapping'
+require 'uri'
+require 'open-uri'
+require File.dirname(__FILE__) + '/numeric'
+require File.dirname(__FILE__) + '/time'
+require File.dirname(__FILE__) + '/time_layout'
+require File.dirname(__FILE__) + '/time_span'
+require File.dirname(__FILE__) + '/weather_parameter'
+
 class ServiceError < RuntimeError; end
 
 class Roker
-  require 'soap/wsdlDriver'
-  require 'xsd/mapping'
-  require 'uri'
-  require 'open-uri'
-  require 'hpricot'
-  require 'numeric'
-  require 'time_layout'
-  require 'time_span'
-  require 'weather_parameter'
   
   attr_accessor :lat, :lng, :started_at, :ended_at
   

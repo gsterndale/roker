@@ -1,4 +1,4 @@
-require 'numeric'
+require File.dirname(__FILE__) + '/numeric'
 
 class TimeSpan
   attr_accessor :start_at, :end_at, :duration
