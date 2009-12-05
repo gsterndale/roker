@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/lib/roker'
+require 'ruby-debug'
+
+started_at  = Time.now.beginning_of_day + 1.day
+ended_at    = started_at.end_of_day
+lat         = 37.0625
+lng         = -95.677068
+
+ARGV.each do |a|
+  # puts "Argument: #{a}"
+end
+roker = Roker.new(:started_at => started_at, :ended_at => ended_at, :lat => lat, :lng => lng)
+
+weather_forecasts_attributes = roker.weather_forecasts_attributes
+
+forecast = "Roker says the forecast for #{started_at.strftime("%B %d, %Y")} is:\n"
+weather_forecasts_attributes.each do |wfa|
+  # wfa => {
+  #   :started_at=>Sat Dec 05 00:17:32 -0500 2009, 
+  #   :wind_speed=>7.0, 
+  #   :minimum_temperature=>21.0, 
+  #   :ended_at=>Sat Dec 05 03:17:32 -0500 2009, 
+  #   :wind_direction=>180.0, 
+  #   :temperature=>24.0, 
+  #   :cloud_cover=>0.0, 
+  #   :dewpoint_temperature=>12.0, 
+  #   :lat=>37.0625, 
+  #   :relative_humidity=>60.0, 
+  #   :liquid_precipitation=>0.0, 
+  #   :lng=>-95.677068, 
+  #   :maximum_temperature=>nil, 
+  #   :wave_height=>0.0, 
+  #   :probability_of_precipitation=>0.0
+  # }
+  temp  = wfa[:temperature].nan? ? '?' : wfa[:temperature].to_i.to_s
+  pop   = wfa[:probability_of_precipitation].nan? ? '?' : wfa[:probability_of_precipitation].to_i.to_s
+  forecast << wfa[:started_at].strftime("%I:%M%p") + "\t" + temp + " deg" + "\t" + pop + "% P.O.P."
+  forecast << "\n"
+end
+
+puts forecast
