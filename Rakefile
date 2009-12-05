@@ -11,6 +11,8 @@ begin
     gem.homepage = "http://github.com/gsterndale/roker"
     gem.authors = ["Greg"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "mocha", ">= 0.9.1"
+    gem.add_development_dependency "hpricot", ">= 0.6.164"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
