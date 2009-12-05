@@ -5,11 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "roker"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "greg@plectix.com"
+    gem.summary = %Q{Weather forecasts from weather.gov}
+    gem.description = %Q{Weather forecasts from weather.gov}
+    gem.email = "gsterndale@gmail.com"
     gem.homepage = "http://github.com/gsterndale/roker"
-    gem.authors = ["Greg"]
+    gem.authors = ["Greg Sterndale"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.add_development_dependency "mocha", ">= 0.9.1"
     gem.add_development_dependency "hpricot", ">= 0.6.164"
